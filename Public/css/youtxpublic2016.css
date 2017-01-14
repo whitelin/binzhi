@@ -1,0 +1,234 @@
+﻿@charset "UTF-8";
+/*-------------- publicBegin----------------- */
+body,h1,h2,h3,h4,h5,h6,p,blockquote, dl,dt,dd,ul,ol,li,a,span,i,b, form,fieldset,legend,button,input,textarea, th,td  {margin:0;padding:0;}
+body,button,input,select,textarea{ font-size: 12px;font-family: Verdana , Arial, Helvetica, sans-serif,"Microsoft yahei"; color:#333;}
+h1,h2,h3,h4,h5,h6{font-size:12px; font-weight: normal;}
+address,em,i{font-style:normal;}
+div,table,form,input,button,select,textarea,fieldset,legend{outline:none;}
+ul,ol,li{list-style:none outside none;}
+a{text-decoration:none; color: #4d4d4d; cursor: pointer;outline:none;}
+a:hover{text-decoration: none; color:#2b98dd;}
+img{border:0;}
+button,input,select,textarea {font-size:12px;}
+
+/*重置元素垂直居中 */
+img,input,select,textarea,button,i{vertical-align:middle;}
+
+/** 显示样式元素 **/
+.hidden{display:none;}
+.show{display:block;}
+.pointer{ cursor:pointer;}
+.no_pointer{ cursor:default;}
+.over_hidden{overflow:hidden;}
+.posR{ position:relative;}
+.posA{ position: absolute;}
+.normal_a:hover{text-decoration:none;}
+
+/** 字体设置 **/
+.normalFont{ font-size:12px; font-family:"宋体";font-weight: normal; color: #333;}
+.font14{font-size:14px;}
+.font16{font-size:16px;}
+.font18{font-size:18px;}
+.familySong{font-family:'宋体';}
+.familyYaHei{font-family: "Microsoft yahei";}
+/** 文字对齐方式设置 **/
+.textR{text-align:right!important;}
+.textL{text-align:left!important;}
+.textCenter{text-align:center!important;}
+/* 浮动*/
+.FL{float:left}.FR{float:right}
+.clearfix:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;}
+.clearfix{*zoom:1;}
+/*文本*/
+.textEllipsis{overflow:hidden;white-space:nowrap;text-overflow: ellipsis;}
+
+/*外边距与内边距*/
+.ML0{ margin-left:0;}.ML5{ margin-left:5px;} .ML8{ margin-left:8px;} .ML10{ margin-left:10px;}  .ML15{ margin-left:15px;} .ML20{ margin-left:20px ;} .ML25{ margin-left:25px ;} .ML30{margin-left:30px;}
+.MR0{ margin-right:0;}.MR5{ margin-right:5px;}.MR8{ margin-right:8px} .MR10{ margin-right:10px}.MR15{ margin-right:15px} .MR20{ margin-right:20px}.MR25{ margin-right:25px}.MR30{margin-right:30px;}
+.MT0{ margin-top:0;}.MT5{ margin-top:5px;} .MT8{ margin-top:8px;} .MT10{ margin-top:10px;}  .MT15{ margin-top:15px;} .MT20{ margin-top:20px ;} .MT25{ margin-top:25px ;} .MT30{margin-top:30px;}
+.MB0{ margin-bottom:0;}.MB5{ margin-bottom:5px;}.MB8{ margin-bottom:8px} .MB10{ margin-bottom:10px}.MB15{ margin-bottom:15px} .MB20{ margin-bottom:20px}.MB25{ margin-bottom:25px} .MB30{margin-bottom:30px;}
+
+.PL0{ padding-left:0;}.PL5{ padding-left:5px;} .PL8{ padding-left:8px;} .PL10{ padding-left:10px;}  .PL15{ padding-left:15px;} .PL20{ padding-left:20px ;} .PL25{ padding-left:25px ;} .PL30{padding-left:30px;}
+.PR0{ padding-right:0;}.PR5{ padding-right:5px;}.PR8{ padding-right:8px} .PR10{ padding-right:10px}.PR15{ padding-right:15px} .PR20{ padding-right:20px}.PR25{ padding-right:25px}.PR30{padding-right:30px;}
+.PT0{ padding-top:0;}.PT5{ padding-top:5px;} .PT8{ padding-top:8px;} .PT10{ padding-top:10px;}  .PT15{ padding-top:15px;} .PT20{ padding-top:20px ;} .PT25{ padding-top:25px ;} .PT30{padding-top:30px;}
+.PB0{ padding-bottom:0;}.PB5{ padding-bottom:5px;}.PB8{ padding-bottom:8px} .PB10{ padding-bottom:10px}.PB15{ padding-bottom:15px} .PB20{ padding-bottom:20px}.PB25{ padding-bottom:25px} .PB30{padding-bottom:30px;}
+/*颜色*/
+.colorWhite{ color: #fff;}
+.colorLkBlue{ color: #2b98dd;}
+/**/
+.W{width:100%;}.H{height:100%;}
+
+/*-------------- publicEnd----------------- */
+
+/*------------- header -----------*/
+.header{ padding:14px 0;  width: 1260px; margin: 0 auto; height: 60px;}
+.header .youtxLogo{ float: left; width: 118px; padding-right: 20px;}
+.header .headerNav{float: left;position: relative;height: 64px;line-height: 46px;width: 520px;padding-top: 10px;z-index: 99;}
+.headerNav li{ float: left; padding:0 20px 0 20px; position: relative; z-index: 99;}
+.headerNav li.curBg{ position: absolute; height: 2px; background: #fff; left: 0; bottom: 0;}
+.headerNav li a{ display: inline-block; width: 100%; height: 100%; font-size: 15px; color: #333; text-align: center; font-family: "Microsoft yahei";}
+.headerNav li.active a{ color:#2b98dd; }
+.headerNav li a:hover{ text-decoration: none; color:#2b98dd; }
+.headerNav li.NavDownLi{padding:0 20px 0 5px;border: 1px solid #fff; border-bottom: 0 none; border-top: 2px solid #fff; margin-top: -2px; }
+.headerNav li.NavDownLi .NavMenu{position: absolute;left: -1px;top: 42px;z-index: 10;width: 115px;display: none;border: 1px solid #cce6f7;border-top:0 none;background: #fff;}
+.headerNav li.NavDownLi .NavDownTrigger{ padding: 0 15px 0 0; background: url("http://js.youtx.com/images/default2016/indexIcon2016.png") no-repeat right -31px;}
+.NavDownLi .NavMenu dd{ line-height: 32px;}
+.headerNav li .NavMenu a{ line-height: 32px; color: #6f6f6f;text-align: left !important; text-indent: 13px;}
+.headerNav li .NavMenu a:hover{ background: #e9f4fc;}
+.header .headerLogin{ float: right;margin-top: 16px;}
+.header .headerLogin li{ height: 30px; line-height: 30px; float: left; position: relative; z-index: 99;}
+.header .headerLogin li.dropDownLi{ padding: 0 0px 0 0;  border: 1px solid #fff; min-width: 56px; font-size:12px;}
+.header .headerLogin li.dropDownLino{ padding: 1px 25px 0 0; display:inline; font-size:12px;}
+.headerLogin li a.dropDownTrigger{ display: inline-block; padding: 0px 15px 0 8px;color: #4d4d4d; font-size: 12px;background: url("http://js.youtx.com/images/default2016/indexIcon2016.png") no-repeat right 12px; font-family: "Microsoft yahei";}
+.headerLogin li a:hover{ color: #2b98dd; }
+.TopullDown{display:none;position:absolute;background-color:#fff;top:30px; padding-top:1px;left: -0.5px;width:100%;border:1px solid #cce6f7; border-top:0 none;z-index:10;_width:84px;  }/*有兼容ie6代码*/
+.TopullDown dd{padding:0 4px;}
+.TopullDown dd a{display:block;overflow:hidden;line-height:28px;height:28px;width:100%; font-family: "Microsoft yahei";}
+/*phone下拉*/
+.headerLogin .dropDownPhone a.dropDownTrigger{ background-position: 7px -105px; padding: 0; display: inline-block; width: 28px; height: 28px; border:1px solid #FFFFFF; border-bottom: 1px solid #fff; position: relative; z-index: 11;}
+.TopMobCon{ display:none;position:absolute;top:29px;right:0px; z-index:10;background-color:#FFFFFF;border:1px solid #d2e9f8;height:165px;line-height:18px;width:487px; font-family: "Microsoft yahei";}
+.TopMobCon dl{border-right: 1px dashed #D1D1D1;float:left;padding:0 10px;text-align: center;}
+.TopMobCon dt{padding:8px 0;}
+.TopMobCon a.mbUrl{background: none repeat scroll 0 0 #F4F4F4;border-radius: 3px;color: #666666 !important;cursor: pointer;font-family: Microsoft yahei;font-size: 16px;font-weight: bold;padding: 14px 6px;}
+.freePublish{ margin-left: 5px; font-family: "Microsoft yahei"; font-weight: bold; margin-top: 14px; float: right; padding:0 6px;text-align: center; height: 38px; line-height: 38px; background: #ff9913; font-size: 15px; color: #ffffff;  -webkit-border-radius: 4px;  -moz-border-radius: 4px;  border-radius: 4px;}
+.freePublish:hover{ color: #fff;}
+
+/*-------------友情链接 footer Begin-----------*/
+/*友情链接*/
+.warmLink{ font-family: "Microsoft yahei"; width: 100%; min-width: 1180px; background: #f7f7f7; padding: 8px 0 20px;}
+.warmLinkCon{ width: 1180px; margin: 0 auto;}
+.warmLinkCon li.warmLinkLi{ float: left; width: 240px;}
+.warmLinkCon li.warmLkSer{ width:330px; }
+.warmLkTit{ height: 60px; line-height: 60px; font-size: 20px; color: #525252; font-weight: 600;}
+.warmLkTxt{ font-size: 14px; line-height: 32px; color: #525252; padding-bottom: 13px;}
+.warmLkTxt span{ color:#fd8121; font-size: 18px; font-weight: bold; padding-left: 9px; vertical-align: baseline; }
+.warmLinkLi .toEnglish{ display: inline-block; color: #fff; font-size: 16px; text-align: center; height: 28px; line-height: 28px; width: 84px; background: #acacac; }
+.warmLkAppImg{ margin-top: 5px;}
+.warmLinkCon li.warmLkAttenUs{ width:130px; }
+#wramLkShare .bds_tsina,#wramLkShare .bds_weixin{ width: 40px; height: 40px; background: url("http://js.youtx.com/images/default2016/indexIconBig.png") no-repeat 0px -970px; margin: 6px 9px 6px 0; float:left;}
+#wramLkShare .bds_weixin{background-position:  0px -900px;  }
+
+.weixinHoverBox{ display: none; font-family: "Microsoft yahei"; width: 400px; position: absolute; right: 90px; top: 113px; background: #fff; border: 1px solid #e5e5e5; padding: 14px 12px; box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.2);}
+.arrowGy{color:#D1D1D1;right: 15px;top: -10px;position: absolute;}
+.arrowWt{color:#fff;right:15px;top: -9px;position: absolute;}
+.weixinHoverBox li{ text-align: center; float: left; width: 200px;}
+.weixinHoverBox h3{ font-size: 14px; font-weight: 600; color: #525252; line-height: 26px;}
+.weixinHoverBox p{ font-size: 12px; color: #7d7d7d; line-height: 20px;}
+.weixinHoverBox img{ }
+
+
+/*footer*/
+#Footer{width:1180px;margin:0 auto;padding:20px 0 50px;}
+.FooterInf{padding-bottom:20px;border-bottom:1px solid #D1D1D1;margin-bottom:20px;line-height:14px;font-family:Microsoft yahei;}
+.atten{float:right;padding-top:3px;width:290px;}
+.atten a{float:left;display:inline-block;width:16px;height:16px;margin-right:8px;background:url(http://js.youtx.com/images/youttx_ico.png) no-repeat;}
+.atten a.Ysoufun{background-position:0 -64px;}
+.atten a.Ysina{background-position:0 0;}
+.atten a.Ysohu{background-position:0 -16px;}
+.atten a.Y163{background-position:0 -32px;}
+.atten a.Ytengxun{background-position:0 -48px;}
+.atten a.Yrenren{background-position:0 -80px;}
+.atten .YWeixin{width:40px;height:16px;line-height:16px;color:#808080!important;padding-left:23px;background:url(http://js.youtx.com/images/youttx_ico.png) no-repeat 0 -144px;margin:0;position:relative;}
+.EwmWp{display:none;position:absolute;top:26px;left:0;width:95px;padding:8px;border:1px solid #DEDEDE;border-radius:3px;background:#FFF;}
+.EwmWpT{position:absolute;top:-6px;left:5px;display:block;height:6px;font-size:0;}
+.CityTit{float:left;margin-left:-100%;font-weight:bold; margin-top:3px;}
+.CityTxt{padding:0 50px 0 75px;overflow:hidden; }
+.CityTxt a{margin-right:10px; white-space:nowrap;display:inline-block;color:#999!important; font-family: "宋体"; line-height:22px;}
+.CityTxt a:hover{color:#008ad9!important;}
+.CityTxtBtn{float:left;margin-left:-40px;width:40px;cursor:pointer;font-weight:bold;}
+.FooterInf .service{font-size:18px;line-height:24px;}
+.footer_link{text-align:center;line-height:20px; padding-top: 20px;}
+.footer_link a{margin:0 8px;display:inline-block;color:#464849;}
+.footer_link a:hover,.FooterDec a:hover{color:#008ad9!important;}
+.FooterDec a{color:#464849;}
+
+.footer_link .appYtx{padding-left:25px;background:url(http://js.youtx.com/images/FooterDesktopbg.gif) 2px 2px no-repeat;}
+.FooterDecSpan{float:left; font-family:Arial, Helvetica, sans-serif;line-height:20px;padding-top:3px; background: url("http://js.youtx.com/images/default2016/ghs.png") no-repeat 0 bottom; padding-left: 20px;}
+.Dec{float:left;border:1px solid #DDD;display:inline-block;margin:3px 0 0 6px;background-color:#FFF;width:104px;height:38px;text-align:center;}
+.FooterDec{text-align:center;padding-top:3px;}
+.FooterDec span{display:inline-block;}
+.FooterCityUl li.clearfix{overflow:hidden;height:18px;color:#999; padding-top: 6px;}
+
+/*右边的悬浮框*/
+.suspenBox{ position: fixed; right: 30px; bottom: 40px; width: 142px; z-index: 99;}
+.suspensionL,.suspensionR{ float: left; width:100px; background: url("http://js.youtx.com/images/default2016/suspensionBg.png") repeat-x 0 0; }
+.suspensionR{width: 42px; height: 40px; background-position: right 0; display: none;}
+.suspensionR a{ display:block; width: 100%;  height: 100%; background: url("http://js.youtx.com/images/default2016/indexIconBig.png") no-repeat 12px -1145px ;}
+
+.suspensionL li.suspenLi{ position: relative; width: 50px; height: 40px; float: left;  background:url("http://js.youtx.com/images/default2016/indexIconBig.png") no-repeat 12px -1030px ; cursor: pointer;}
+.suspensionL li.suspenLi2{ background-position: 12px -1071px; }
+.suspensionL li.suspenLi2 a{ width: 100%; height: 100%; display: block;}
+.suspensionL li.suspenLi3{ background-position: 12px -1109px;}
+.suspensionL li.cur{ background-color: #828282;}
+.suspenPop1{ display: none; width: 190px; height: 260px; position: absolute; left: 0; bottom:44px; background: #fff; box-shadow:0px 0px 4px 1px rgba(0,0,0,0.15);-webkit-box-shadow:0px 0px 4px 1px rgba(0,0,0,0.15);-moz-box-shadow:0px 0px 4px 1px rgba(0,0,0,0.15); }
+.suspenPopTit1{ font-size: 15px; background: #2b98dd; height: 40px; line-height: 40px; color: #fff; text-align: center; }
+.suspenPopTxt1{line-height: 20px;}
+.suspenPopTxt1 ul{ height: 190px; overflow: auto; }
+.suspenPopTxt1 li{border-bottom:1px solid #ebebeb;  padding: 12px 12px 10px; }
+.suspenPopTxt1 li h3{ color: #2b98dd; font-size: 12px; position: relative;}
+.suspenPopTxt1 li .closeBtn{ width: 20px; height: 20px; position: absolute; right: 0px; top:6px; background: url("http://js.youtx.com/images/default2016/indexIconBig.png") no-repeat 0 -1200px ;  }
+.suspenPopTxt1 .seeMoreMsg{text-align: right; padding: 0 10px;}
+
+.suspenPop3{  height: 165px; left: -100px; text-align: center; padding: 10px 0; }
+.suspenPop3 h2{ font-size: 14px; line-height: 34px;}
+.suspenPop3 p{ line-height: 30px;}
+
+/*20160505增加代码*/
+.suspenBox{
+	right:0;
+	bottom:100px;
+	right:0;
+	position: fixed;
+	width:50px;
+	z-index: 99;
+	display: none;
+}
+.suspenBox .suspensionL{
+	width:50px;
+	float:none;
+	position: relative;
+	background: url("http://js.youtx.com/images/default2016/suspenChange.png") repeat-y 0 0;
+	height: 80px;
+
+}
+.suspenBox .suspensionL .suspenLi{
+	position: absolute;
+	width:40px;
+}
+.suspenBox .suspensionL .suspenLi2{
+	left:0;
+	top:0;
+}
+.suspenBox .suspensionL .suspenLi3{
+	left:0;
+	top:40px;
+}
+.suspenBox .suspensionR{
+	float:none;
+	width:50px;
+	background: url("http://js.youtx.com/images/default2016/suspenChange.png") repeat-y 0 0;
+	left:0;
+	display: block;
+}
+.suspenPop3{
+	left:-190px;
+	top:-40px;
+}
+.suspenBox .suspensionR a{
+	margin-left:-2px;
+}
+
+/*20161102*/
+.headerLogin li a.dropDownTrigger { position: relative; background: url(http://js.youtx.com/images/default2016/indexIcon2016.png) right 12px no-repeat;}
+.headerLogin li.has_msg a.dropDownTrigger { padding: 0 25px 0 8px; }
+.yello_dot { position: absolute; top: 9px; right: 12px;}
+.hp_ics { color: #ff9900;}
+.c_0088dc { color: #0088dc;}
+.has_msg .TopullDown { left: -0.5px;}
+.wordLongLi.has_msg { width: 91px;}
+.headerLogin li a.dropDownTrigger { display:block; }
+.headerLogin li.has_msg.wordLongLi a.dropDownTrigger { position: relative; padding: 0 25px 0 8px; background: url(http://js.youtx.com/images/default2016/indexIcon2016.png) right 12px no-repeat;}
+
+
+
+

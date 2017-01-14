@@ -1,0 +1,31 @@
+<extend name="Layout/index" />
+<block name="breadcrumb-01">
+	<li>
+		<i class="icon-home home-icon"></i>
+		<a href="#">首页</a>
+	</li>
+	<li class="active">角色管理</li>
+</block>
+
+<block name="breadcrumb-02">
+	<h1>
+		角色管理
+		<small>
+			<i class="icon-double-angle-right"></i>
+			 角色修改
+		</small>
+	</h1>
+</block><block name="main">
+
+	<form action="<{:U('Role/save')}>" method='post'>
+		角色名：<input type="text" name="name" value="<{$vo.name}>"><br>
+		说  明 ：<input type="text" name="remark" value="<{$vo.remark}>"><br>
+		<input type="radio" name="status" value="1" <if condition="$vo.status eq 1">checked</if>>启用
+		<input type="radio" name="status" value="0" <if condition="$vo.status eq 0">checked</if>>禁用
+		<br>
+		<input type="submit" value="修改">
+		<input type="hidden" name="id" value="<{$vo.id}>">
+		
+		
+	</form>
+</block>

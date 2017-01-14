@@ -1,0 +1,232 @@
+﻿/* 2012-04-26对话框*/
+.Status_online{background:url(http://js.youtx.com/images/webim/StatusBg02.gif) 0px 0px;height:21px;width:21px;position:absolute;top:10px;left:60px;display:block}
+.Status_Offline{background:url(http://js.youtx.com/images/webim/StatusBg02.gif) 0px -29px;height:21px;width:21px;position:absolute;top:10px;left:60px;display:block}
+.TalkBox {height:0;margin-top:0px;position:fixed;z-index:10000; left:340px; bottom:515px;}
+/** html .TalkBox { _position:absolute; _margin-bottom:412px;_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));}*/
+.Talk{background:url(http://js.youtx.com/images/webim/TalkLRbg.png) no-repeat left 0px;_background: url(http://js.youtx.com/images/webim/TalkLRbg.gif) no-repeat left 0px; height:380px;width:600px;padding-left:0px;z-index:100;box-shadow:-2px 2px 15px #CCC;}
+.Talk_center{/*background:url(http://js.youtx.com/images/webim/Talk_centerBg.png) repeat-x 0px 0px;*/background:#fff;height:340px;width:485px;float:left;position:relative; border: solid 0px #dedede;border-left:0px;}/* 2012-06-05  width:490px;height:340px;*/
+.Chat_min {position:absolute;top:1px;right:1px;cursor:pointer;}
+.Talk_right{background:url(http://js.youtx.com/images/webim/TalkLRbg.png) no-repeat right 0px;height:340px;width:0px;float:right;_background: url(http://js.youtx.com/images/webim/TalkLRbg.gif) no-repeat right 0px;}
+.TabHeader{padding-top:5px;overflow:hidden;width:100%;_zoom:1}/* 2012-06-05修改 overflow:hidden;width:100%;_zoom:1*/
+/*.TabHeader li{background:url(http://js.youtx.com/images/webim/TalklistBg.gif) repeat-x 0px 0px;float:left;height:23px;border:1px solid #CCC;cursor:pointer;margin-right:2px;}*//* 2012-06-05  background:url(http://js.youtx.com/images/webim/TalklistBg.gif);height:23px;*/
+/*.TabHeader .Listcur{background:url(http://js.youtx.com/images/webim/TalklistCurBg.gif) repeat-x 0px 0px; float:left; height:23px; border: 1px solid #42B8E6; cursor:pointer }*/
+/*.TabHeader li span{display:block;float:left}*/
+/*.TabHeader li .TalkOnline{background:url(http://js.youtx.com/images/webim/StatusBg02.gif) 0px -23px;height:23px;width:23px;display:block}*//* 2012-06-05 */
+/*.TabHeader li .TalkOnline03,.Yichu li .TalkOnline03{ background: url(http://js.youtx.com/images/webim/StatusBg02.gif) 0px -23px; height:23px; width:23px; display:block }*//*2012-06-05*/
+.TabHeader li .TalkClose{background:url(http://js.youtx.com/images/webim/s) no-repeat -20px 0px;height:16px;width:16px;cursor:pointer;margin:5px 2px;top:10px; right:2px;}
+/*.TabHeader li .TalkName{height:23px;line-height:23px;height:18px \9;line-height:17px \9;padding-top:4px \9;width:36px; overflow:hidden;}/* 2012-06-05 宽高*/
+.TalkOnline02{background:url(http://js.youtx.com/images/webim/StatusBg02.gif) 0px 0px;height:23px;width:23px;display:block}/*在线*//* 2012-06-05 宽高*/
+/*.TabHeader .Listcur .TalkOnline03{background:url(http://js.youtx.com/images/webim/StatusBg02.gif) 0px -23px;height:23px;width:23px;display:block}/*当前对话框用户不在线*/
+/*.TabHeader .Listcur .TalkOnline{background:url(http://js.youtx.com/images/webim/StatusBg02.gif) 0px 0px;height:23px;width:23px;display:block}
+/* .TabHeader .Listcur .TalkClose{background:url(http://js.youtx.com/images/webim/TalkClose.gif) no-repeat 0px 6px;height:7px;width:8px;cursor:pointer;padding:5px 0px 5px 5px;} */
+/*.TabHeader .Listcur .TalkName{height:23px;line-height:23px;height:18px \9;line-height:18px \9;padding-top:4px \9; width:36px; overflow:hidden;}/* 2012-06-05 width:48px; */
+/*黄色信息*/
+/*.TabHeader .List_Y{background:url(http://js.youtx.com/images/webim/Talklist_Ybg.gif) repeat-x 0px 0px;float:left;height:23px;border:1px solid #F5B75E;cursor:pointer}
+.TabHeader .List_Y .TalkOnline{background:url(http://js.youtx.com/images/webim/StatusBg02.gif) 0px 0px;height:23px;width:23px;display:block}
+/* .TabHeader .List_Y .TalkClose{background:url(http://js.youtx.com/images/webim/TalkClose.gif) no-repeat 0px 6px;height:7px;width:8px;cursor:pointer;padding:5px 0px 5px 5px;} */
+/*.TabHeader .List_Y .TalkName{height:23px;line-height:23px;height:18px \9;line-height:18px \9;padding-top:4px \9;width:36px;overflow:hidden;}/* 2012-06-05 width:48px; */
+.Listxt_left{float:left;width:335px;margin-right:0px;padding-top:0px; overflow:hidden}/* 2012-06-05 width:360px;*/
+.FontAd a { margin-left: 5px; line-height: 22px; text-decoration: underline; }
+.FontAd { background: #F2F2F2; height: 22px; width: 356px; border: 1px solid #ccc; }
+/*.chat_history{width:310px;overflow:visible;padding: 0px 0px;border-bottom:0px solid #E0E0E0; word-wrap:break-word; }2015-03-27*//* 2012-06-05 width:312px;height:190px;*//*xg2015-03-16*/
+.chat_history p { font:12px/18px "宋体"; padding:0px 12px; }
+.ChatName{float:left; font: 12px/20px "宋体"; color: #0087D2; }
+.ChatTime{float: right;}
+.chat_history .Chat_h2 {clear:left;line-height:20px;}
+.Chat_main02{background-color:#f6f8f9; padding-bottom:4px;}
+.Chat_text {margin-top:2px; width:320px;}/* 2012-06-05 */
+.Chat_text textarea{width:318px;width:316px ;height:54px;overflow:auto;border:1px solid #AED9F1;font:12px/18px "宋体";color:#333;background-color:#FFF;resize:none}/*2012-06-05修改 width:320px;height:56px;*/
+@media screen and (-webkit-min-device-pixel-ratio:0){ .Chat_text textarea {width:314px;} }  /*chrome and safari*/
+/*.Chatbtn input{background:url(http://js.youtx.com/images/webim/Chatbtn.gif) no-repeat 0px 0px;height:25px;width:67px;border:none 0;float:right;cursor:pointer; margin-top:4px; margin-right:10px;}xg2015-03-31*/
+.Chatbtn{padding-top:0px; height: 31px; background: #f6f7f8;width:100%;_zoom:1;position: relative;}/* 2012-06-05修改 overflow:hidden;width:100%;_zoom:1*/
+.Listxt_right { width: 150px;float: left;}
+/*.Chatroom {width:160px;height:120px;padding-top:5px; fore}
+.ChatAD{height:165px;width:160px;margin-top:5px}
+.ChatAD img{height:165px; width: 160px;}xg2015-03-26*/
+.Chatroom p{line-height: 20px; }
+.Chatroom h2 a{ font: 14px "微软雅黑" !important; word-break:break-word !important;word-wrap:break-word !important; overflow:hidden; }
+.Chatroom .Chat_pay{ font-family:Arial, Helvetica, sans-serif; font-weight:bold !important;color:#ff5858;font-size:16px; margin-bottom:12px;  border-bottom:1px dashed #ccc; padding-bottom:12px; }
+.Yichu{width:88px;border:solid 1px #9ED7EB;background-color:#F4FCFF; position:absolute; right:0px;top:26px}
+.Yichu li{height: 23px; border-bottom: 1px solid #CCC; cursor:pointer;}
+.Yichu .List_Y{ background-color:#FFECAC; height:23px;cursor:pointer }
+.Yichu li span{display:block;float:left}
+.Yichu li .TalkOnline{ background: url(http://js.youtx.com/images/webim/StatusBg02.gif) 0px -23px; height:23px; width:23px; display:block }
+.Yichu li .TalkClose{background:url(http://js.youtx.com/images/webim/TalkClose.gif) no-repeat 0px 0px;height:13px;width:13px;cursor:pointer;margin:5px 2px;}
+.Yichu li .TalkName{padding-right:3px;padding-left:3px;height:23px; line-height:23px;height:18px \9;line-height:18px \9;padding-top:4px \9;width:36px; overflow:hidden;}
+.Yichu .Listcur .TalkOnline{background:url(http://js.youtx.com/images/webim/StatusBg02.gif) 0px 0px;height:23px;width:23px;display:block}
+/*.Yichu .Listcur .TalkClose{background:url(http://js.youtx.com/images/webim/TalkClose.gif) no-repeat 0px 6px;height:7px;width:8px;cursor:pointer;padding:5px 0px 5px 5px;}*/
+.Yichu .Listcur .TalkName{padding-right:3px;padding-left:3px;height:23px;line-height:23px;height:18px \9;line-height:18px \9;padding-top:4px \9; width:36px; overflow:hidden;}
+.DownArrow{position: absolute; height: 16px; width: 16px; top:8px; right:74px;cursor:pointer}/* 2012-06-05  cursor:pointer*/
+.ChatSmall{cursor: pointer; height:32px;right:10px; width:360px;position:fixed; bottom:0px;z-index:100;}
+* html .ChatSmall {_position:absolute;_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop, 10)||0)-(parseInt(this.currentStyle.marginBottom, 10)||0)));}
+.ChatSmall li{float:left; cursor:pointer;font: 12px/32px "宋体";padding-left:45px;height:30px;padding-top:2px}
+/*正常状态*/
+.ChatMes,.ChatUser{color:#333;}
+.ChatUser{ background: url(http://js.youtx.com/images/webim/SmallBg.gif) no-repeat 0px -136px;width:135px;}
+.ChatMes{background: url(http://js.youtx.com/images/webim/SmallBg.gif) no-repeat 0px -10px;width:135px; }
+/*蓝色状态*/
+.ChatMes_b,.ChatUser_b{color:#fff;}
+.ChatUser_b{ background: url(http://js.youtx.com/images/webim/SmallBg.gif) no-repeat 0px -178px;width:135px;}
+.ChatSmall .ChatMes_b{background: url(http://js.youtx.com/images/webim/SmallBg.gif) no-repeat 0px -52px;width:135px;float:right;}
+/*灰色状态*/
+.ChatMes_b{color:#fff;}
+.ChatSmall .ChatMes_g{background: url(http://js.youtx.com/images/webim/SmallBg.gif) no-repeat 0px -10px;width:135px; float:right;}
+/*黄色状态*/
+.ChatMes_Y,.ChatUser_Y{color:#fff;}
+.ChatUser_Y{background: url(http://js.youtx.com/images/webim/SmallBg.gif) no-repeat 0px -219px;width:135px;}
+.ChatSmall .ChatMes_Y{background: url(http://js.youtx.com/images/webim/SmallBg.gif) no-repeat 0px -94px;width:135px;float:right;}
+.ChatSmall .ChatMes_C{ background: url(http://js.youtx.com/images/webim/SmallBg.gif) no-repeat 0px -260px; width:135px; text-indent:-9999em;float:right;}
+.ChatMes_C_T {position: absolute; right: 0px; bottom:-400px; }
+.ChatMes_C_T h2 { background: url(http://js.youtx.com/images/webim/SmallBg.gif) no-repeat 0px -305px; font: normal 12px/32px "宋体"; color: #FFF; height: 32px; width: 160px; padding:0px 10px; }
+.ChatMes_C_T .Mes_h2 { display: block; float: left; width: 50px; }
+.ChatMes_C_T .All_mes{background:#FFF;line-height:24px;width:168px;border-right:1px solid #2596D4;border-left:1px solid #2596D4;text-align:right;padding-right:10px;}
+.ChatMes_C_T .Mes_main{background:#FFF;width:158px;padding-right:10px;padding-left:10px;height:288px;overflow:auto;border-right:1px solid #2596D4;border-left: 1px solid #2596D4;overflow-x:hidden;}
+.ChatMes_C_T .Mes_min{background:url(http://js.youtx.com/images/webim/LeastBg02.gif) no-repeat 0px center;display:block;float:right;height:32px;width:16px;cursor:pointer }
+.Mes_name_Online{background:url(http://js.youtx.com/images/webim/StatusBg.gif) no-repeat 0px 0px;height:21px;width:75px;padding-left:25px;display:block;line-height:21px;float:left;color:#1E7E91}
+.Mes_name_Offline{background:url(http://js.youtx.com/images/webim/StatusBg.gif) no-repeat 0px -30px;height:21px;width:75px;padding-left:25px;display:block;line-height:21px;float:left;color:#1E7E91}
+.Mes_count { display: block; float: left; height: 21px; width: 38px; line-height:21px;color:#1E7E91}
+.Mes_close { background: url(http://js.youtx.com/images/webim/TalkClose.gif) no-repeat 0px center; display: block; float: left; height: 21px; width: 13px; cursor:pointer }
+.ChatMes_C_T .Mes_main li { margin: 0px; padding: 5px 0px 0px; font-family: "宋体"; line-height: 21px; width: 155px; cursor: auto; height: auto; border-top: 1px solid #E0E0E0;cursor:pointer}
+.Takle_listxt{float:left;}
+#ChatMes{float:right;}
+.ChatWarning { font: 12px/25px "宋体"; color: #F00; float: left; width:240px; padding-left:2px; }
+.mes_p{width:142px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}
+.TabHeader li span.TalkClose:hover{background:url(http://js.youtx.com/images/webim/D_close.png) no-repeat -20px 0px;height:16px;width:16px;cursor:pointer;margin:5px 2px;top:8px; right:2px;}
+.Yichu li span.TalkClose:hover{background:url(http://js.youtx.com/images/webim/D_close.png) no-repeat 0px 0px;height:16px;width:16px;cursor:pointer;margin:5px 2px;}
+.Mes_close:hover { background: url(http://js.youtx.com/images/TalkCloseM.gif) no-repeat 0px center; display: block; float: left; height: 21px; width: 13px; cursor:pointer }
+
+/*xg2015-01-22*/
+/*begin*/
+.OutBox{z-index:10001;position:absolute;width:450px;height:360px;border:1px solid #4c4c4c;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;text-align:center;filter:alpha(opacity=0);opacity:0;display:none;}
+.CloseBtn{cursor:pointer;background:url(http://js.youtx.com/images/ColseBtn.png) 0 -40px no-repeat;width:25px;height:25px;z-index:101;position:absolute;top:10px;right:10px;display:block;}
+.CloseBtn:hover{background:url(http://js.youtx.com/images/ColseBtn.png) no-repeat;}
+.OutBoxPic{position:relative;z-index:100;filter:alpha(opacity=100);opacity:1;}
+.OutBoxbg{z-index:99;background-color:#000;filter:alpha(opacity=55);opacity:0.55;width:448px;height:358px;position:absolute;top:0;left:0;border:1px solid #6b6b6b;-webkit-box-shadow:inset 0 0 3px #6B6B6B;-moz-box-shadow:inset 0 0 3px #6B6B6B;box-shadow:inset 0 0 3px #6B6B6B;}
+/*end*/
+
+/*xg2015-01-30*/
+.NewTalkBox{width:601px;box-shadow:-2px 2px 15px #CCC;}
+.UserMenu{ width: 115px; height: 380px;float: left; background: #5faee3;border-top-left-radius: 3px; border-bottom-left-radius: 3px; position: relative; overflow: hidden; /*cursor:move;*/}
+.DialogBox{width: 485px; height: 340px;float: left;border: solid 1px #dedede;border-left:0px;}
+.UserMain{ width: 112px; position: absolute;left: 0px;top: 0px;height:380px;}
+.UserScroll{width: 10px; position: absolute; top: 6px;right: 3px;display:none;height:371px; }
+.UserSBg{ background:url(http://js.youtx.com/images/webim/UserBarBg.png) no-repeat;height: 371px;}
+.TabHeader{ position: absolute;top: 0px;left: 0px; cursor: default;}
+.TabHeader li{float: left;width: 100%; height:42px;position: relative; overflow: hidden; margin-top: 8px;width: 108px;}
+.TabHeader li.UserCur {border-left: 3px solid #318dca;height:42px;background:url(http://js.youtx.com/images/webim/WBg.png) repeat;}
+.TabHeader li.UserCur .CloseUser {display: block;width: 16px;height: 16px; position: absolute;right: 2px;top:8px; background: url(http://js.youtx.com/images/webim/D_close.png) no-repeat -20px 0px;}
+.TabHeader li.UserCur .CloseUser:hover {background: url(http://js.youtx.com/images/webim/D_close.png) no-repeat 0px 0px;}
+
+/*.UserUl li.UserCur02 {border-left: 3px solid #318dca;width: 99px;height:42px;background:url(../img/WBg.png) repeat;}
+.UserUl li.UserCur02 .CloseUser {display:none;width: 16px;height: 16px; position: absolute;right: 5px;top: 12px; background: url(../img/D_close.png) no-repeat -20px 0px;}
+.UserUl li.UserCur02 .CloseUser:hover {background: url(../img/D_close.png) no-repeat 0px 0px;}*/
+.UserImg{width: 35px;height: 35px;float: left;margin: 3px 6px 3px 8px;}
+.UserImg img{width: 35px;height: 35px;border-radius: 50%;}
+.UserName{ font-family: "微软雅黑";font-size: 12px;width: 50px;float: left; line-height: 36px; overflow: hidden;}
+.TabHeader li.UserCur .UserName{color: #333;}
+/*.UserUl li.UserCur02 .UserName{color: #333;}*/
+.UserBar{width: 10px;height: 335px;position: absolute;top: 0px;left: 0px; display: none;z-index: 3; background:url(http://js.youtx.com/images/webim/UserBar.png) no-repeat 0px 0px;}
+
+#TalkBox_Youtx_ID_s{width: 485px !important;height: 31px !important;border-bottom: solid 1px #eeeff1; position: relative; background-color: White !important;}/*xg2015-03-26*/
+.RentName{height: 31px;line-height: 31px;display: block;padding-right: 26px;padding-left: 12px;color: #333333;font-family: "微软雅黑"; font-size: 14px;}
+.SmallIco{width: 26px;height: 32px;position: absolute;right: 0;top: 0px;background:url(http://js.youtx.com/images/webim/SIcon.png) no-repeat 0px 0px;display: block;cursor: pointer;}
+.DialogCon{width: 335px;float: left;}
+.ContactM{width: 150px;float: left;}
+.DialogPanel{width: 100%;position: relative;height:227px;border-bottom:solid 1px #e8ebee;}
+.DialogBar{width: 10px;height: 229px; position: absolute;top: 0px;right: 0px;}
+.TopBar,.BottomBar{width: 10px;height: 7px; position: absolute;left: 0px;display: none;cursor: default;}
+.TopBar{top: 2px;background:url(http://js.youtx.com/images/webim/StraGray.png) no-repeat -1px 0px;}
+.BottomBar{bottom: 0px;background:url(http://js.youtx.com/images/webim/StraGray.png) no-repeat -23px 0px;}
+.ScrollBox{width: 10px;height: 205px;position: absolute;top: 12px;left:0px;display:none;}
+.ScrollBg{background:url(http://js.youtx.com/images/webim/ScrollBg.png) no-repeat 0px 0px;height: 205px;}
+.ScrollBar{width: 10px;height: 60px;position: absolute;top: 0px;left: 0px; background:url(http://js.youtx.com/images/webim/ScrollBar.png) no-repeat 0px 0px;z-index: 3;display:none;}
+.DialogNr{width: 325px;position: absolute;height: 202px; overflow: hidden;top: 26px;left: 0px;}
+.Chat_h2{overflow: hidden;padding:4px 12px 0px 12px !important; line-height: 24px;}
+.Chat_h2 .ChatTime{color: #999999;}
+.CRecordCon{padding:0px 12px 0px 12px !important;margin-bottom: 0px; line-height: 22px; word-break:break-word !important;word-wrap:break-word !important; overflow:hidden;}
+.CharError{ background: #f6f8f9;}
+.Chat_text{height: 87px; overflow: hidden;width: 100%; position: relative; background:#fff;}
+.WordEdit{position: absolute;top: 0px;left: 0px;width: 325px;word-wrap: break-word;_height:88px;min-height:88px; overflow-x: hidden; _overflow-y: visible;overflow-y: auto;}
+.Chat_text .DialogBar{height: 87px;}
+.Chat_text .ScrollBg{height: 65px;top: 12px; background: url(http://js.youtx.com/images/webim/WordSBg.png) no-repeat 0px 0px;}
+.Chat_text .ScrollBar{height: 45px;top: 0px; background: url(http://js.youtx.com/images/webim/WordBar.png) no-repeat 0px 0px;}
+.SendBox{height: 31px; background: #f6f7f8;}
+.youtx_im_but{width: 65px;height: 24px; line-height: 24px; text-align: center;color:#fff; font-size: 12px; font-family: "微软雅黑"; background: #53a7df;border-radius: 3px;border:0px;float: right;margin-top:4px;margin-right: 10px;}
+
+.Chatroom{ width:130px; padding:10px 10px 0px 10px; height:218px; background:#f7f8f9}
+.Chatroom h2{width: 130px;margin-bottom: 10px;}
+.Chatroom .Chat_pay{margin-bottom: 10px;}
+.ChatAD{width: 150px;height: 120px;}
+.ChatAD img{width: 150px;height: 120px;}
+.TextArea{width: 325px;border: 0px;height:78px;outline: none;overflow:auto;padding:5px;}
+/*2015-02-02*/
+.TabHeader li .UserImg{width: 35px;height: 35px;float: left;margin: 3px 6px 3px 8px;}
+.TabHeader li .UserImg .TalkOnline03{ background: url() 0px 0px; height:35px; width:35px; display:block;border-radius: 50%; }/*2014-02-02*/
+.TabHeader li .TalkName{ font-family: "微软雅黑";font-size: 12px;color:#fff;width: 40px;float: left; line-height: 36px; overflow: hidden; padding-top:4px;margin-left:2px;}
+.TabHeader .Listcur .TalkClose:hover{background:url(http://js.youtx.com/images/TalkCloseM.gif) no-repeat 0px 0px;height:16px;width:16px;cursor:pointer;margin:5px 2px;}
+.Yichu li .TalkClose:hover{background:url(http://js.youtx.com/images/TalkCloseM.gif) no-repeat 0px 0px;height:16px;width:16px;cursor:pointer;margin:5px 2px;}
+.TabHeader .Listcur{background:url(http://js.youtx.com/images/webim/WBg.png) repeat-x 0px 0px; float:left; height:35px; border: 1px solid #42B8E6; cursor: default; }
+.TabHeader .Listcur .TalkOnline03{background:url() 0px 0px;height:35px;width:35px;display:block}/*当前对话框用户不在线*/
+.TabHeader .Listcur .TalkOnline{background:url(http://js.youtx.com/images/webim/StatusBg02.gif) 0px 0px;height:35px;width:35px;display:block}
+.TabHeader .Listcur .TalkName{height:18px;line-height:18px;padding-top:13px; width:36px; overflow:hidden; margin-left:2px;}/* 2015-02-25*/
+.Yichu .Listcur .TalkOnline{background:url(http://js.youtx.com/images/webim/StatusBg02.gif) 0px 0px;height:35px;width:35px;display:block}
+.Yichu .Listcur .TalkName{padding-right:3px;padding-left:3px;height:23px;line-height:23px;height:18px \9;line-height:18px \9;padding-top:4px \9; width:36px; overflow:hidden;}
+.TabHeader li.Listcur .TalkClose {display: none;width: 16px;height: 16px; position: absolute;right: 2px;top:8px; background: url(http://js.youtx.com/images/webim/D_close.png) no-repeat -20px 0px;}
+.TabHeader li.Listcur .TalkClose:hover {background: url(http://js.youtx.com/images/webim/D_close.png) no-repeat 0px 0px;}
+.TabHeader li .TalkClose {display: none;width: 16px;height: 16px; position: absolute;right: 2px;top:8px; background: url(http://js.youtx.com/images/webim/D_close.png) no-repeat -20px 0px;}
+.TabHeader li .TalkClose:hover {background: url(http://js.youtx.com/images/webim/D_close.png) no-repeat 0px 0px;}
+.TabHeader li.Listcur {border-left: 3px solid #318dca;height:42px;background:url(http://js.youtx.com/images/webim/WBg.png) repeat;}
+.PhoneNum{width: 285px;height: 25px; line-height: 25px; background:url(http://js.youtx.com/images/webim/Phone.png) no-repeat 13px 3px ;padding-left: 40px; background-color: #fff8bf;margin-top: 0px;margin-left: 0px; z-index:100;position: relative}
+/*.DialogRecord{width:310px;height:190px;overflow:hidden;padding: 0px 0px;border-bottom:1px solid #E0E0E0; word-wrap:break-word;position: absolute; }*/
+/*.chat_history{position: absolute;top: 0px;left: 0px;width: 305px; margin-top:0px; padding:0px 5px;}2015-03-27*/
+/*.DialogRecord{width: 310px;position: absolute;height: 190px; overflow: hidden;top: 26px;left: 0px; }2015-03-26xg*/
+.DialogRecord{width: 100%;position: absolute;height:186px;border-bottom:solid 1px #e8ebee;}
+/*xg2015-03-16*/
+.messagebox01{width: 187px;height: 55px; background: #fff;border: solid 1px #81a3bc;  position: absolute;border-radius: 3px;margin-top: 5px;top:15px;left:0px;z-index: 10001;}
+.messagebox01 span{padding-left: 25px; background: url(http://js.youtx.com/images/webim/ATip.png) no-repeat 0px 1px; line-height: 23px;color: #027cdc; font-size: 14px; font-family: "宋体";font-weight: bold;display: block;margin-top: 7px;margin-left: 8px;}
+.LocA{margin-left: 12px;padding-top: 7px;display: inline-block; cursor: pointer;}
+.mess-char{position: absolute;width: 9px;height: 7px;left:16px;background: url(http://js.youtx.com/images/webim/Astra.png) no-repeat 0px 1px; top: -7px;}
+/*xg2015-03-26*/
+.chat_history{position: absolute;top: 0px;left: 0px;width: 325px;}
+.Chat_text textarea{width: 325px;border: 0px;height:62px;outline: none;overflow:auto;padding:5px;}
+.failNotClick{ color:Gray !important;}
+/*添加2015-04-30*/
+.ResetDefault{ width:270px; height:53px; background:url(http://js.youtx.com/images/webim/ResetDefault_bg.png) no-repeat 0px 0px; margin:0px auto; padding-bottom:7px;}/*2015-04-14*/
+.ResetDefault p{ padding-left:44px; color:#6b6b6b;}/*2015-04-14*/
+.ResetDefault p span{ color:#fb9d22; font-weight:bold;}/*2015-04-14*/
+.Chat_main{ margin-top:6px; margin-bottom:6px;}
+.Chat_text p.msg_logging{ text-align:right; margin-top:3px; height:17px;}
+.Chat_text p.msg_logging a{ color:#7f7f7f; padding-right:10px; background:url(http://js.youtx.com/images/webim/msg_logging.png) no-repeat 0px 0px; padding-left:22px; padding-bottom:5px;}
+
+/*弹窗2015-06-03add*/
+.TextEllipse{ white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.HouseRe{ width:364px; border:1px solid #c3c3c3; background:#fff; left:120px; top:-2px; z-index:999; display:none;}
+.HouseReTit{background:#f7f8f9; height:28px; line-height:28px;}
+.HouseReTit span{font-family:Microsoft yahei; font-size:14px; color:#333333; padding-left:9px; }
+.Recommend_01{ position:absolute; left:295px; top:15px; width:33px; height:24px; color:#5faee3; line-height:24px; border:1px solid #5faee3; border-radius:4px; background:#fff; text-align:center; cursor:pointer;}/*2015-06-15xg*/
+.RecommendCur{ background:#5faee3; border:1px solid #5faee3; color:#fff;}
+.ConRecom{ position:relative;}
+.HouseReUl{ height:233px; overflow:auto;}
+.HouseReList{ margin:9px 26px 9px 8px;}
+.HouseReList dt,.HouseReList dd{ float:left}
+.HouseReList dd{ padding-left:9px; width:212px; position:relative;}
+.HouseReListTit{ font-size:12px; color:#333333; padding-bottom:4px;}
+.HouseReListborder{ height:1px; width:261px; position:absolute; bottom:-4px; left:76px; background:#f2f2f2;}/*2015-06-15zj*/
+.HouseReListTxt{ font-size:12px; color:#999999; line-height:17px;}
+.HousePrice{ position:absolute; right:9px; bottom:2px;color:#ff9913; font-size:14px; font-family:"宋体"; font-weight:bold;}
+/*加载的信息*/
+.HouseReDetails{ margin:0px 13px 0px 12px; padding-bottom:8px; display:block;}
+.ConMsg{ border:1px solid #d2d2d2; border-radius:6px; padding:0px 9px; margin-top:4px; background:#fff;}
+.ConMsgTit{ color:#0087d2; font-size:12px; font-weight:bold; height:29px; line-height:29px;}
+.ConMsgDl{ padding-bottom:8px;}
+.ConMsgDl dt,.ConMsgDl dd{ float:left;}
+.ConMsgDl dt{ width:120px;}
+.ConMsgDl dd{ width:160px;}
+.ConMsg p.HouseData{ height:26px; line-height:26px; color:#999999; font-size:12px; font-family:"宋体"; border-top:1px solid #d2d2d2; padding:0px;}
+.ConMsgDl dd p{ font-size:12px; line-height:18px; color:#999999; font-family:"宋体"; padding:0px; padding-left:12px;}/*2015-06-10xg*/
+.ConMsgDl dd p.ConMsgPAddr{ padding-top:5px;}/*2015-06-10zj*/
+.ConMsg .ConMsgPrice{ left:132px; bottom:8px; color:#ff5858; font-size:16px; font-weight:bold;}
+.EvalSum{ padding-left:15px;}
+span.HousRecomd{color:#7f7f7f; background:url(http://js.youtx.com/images/webim/HousRecomd.png) no-repeat 0px 1px; padding:3px 13px 5px 22px; cursor:pointer;}/*2015-06-02增加*/
+
+

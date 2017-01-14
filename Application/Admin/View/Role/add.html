@@ -1,0 +1,31 @@
+<extend name="Layout/index" />
+<block name="breadcrumb-01">
+	<li>
+		<i class="icon-home home-icon"></i>
+		<a href="#">首页</a>
+	</li>
+	<li class="active">角色管理</li>
+</block>
+
+<block name="breadcrumb-02">
+	<h1>
+		角色管理
+		<small>
+			<i class="icon-double-angle-right"></i>
+			 角色添加
+		</small>
+	</h1>
+</block>
+<block name="main">
+
+	<form action="<{:U('Role/doadd')}>" method='post'>
+		角色名：&nbsp;<input type="text" name="name"><br><br>
+		说  &nbsp;&nbsp;&nbsp;明 ：<input type="text" name="remark"><br><br>
+		<input type="radio" name="status" value="1" checked>启用
+		<input type="radio" name="status" value="0" >禁用
+		<br><br>
+		<input type="submit" value="添加">
+		
+		
+	</form>
+</block>
