@@ -21,6 +21,7 @@ return array(
 	//模板配置
 	'TMPL_L_DELIM'=>'<{',
 	'TMPL_R_DELIM'=>'}>',
+<<<<<<< HEAD
 
     //开启页面trace
     'SHOW_PAGE_TRACE' =>true,
@@ -29,4 +30,6 @@ return array(
         //自定义一个常量
         '__UPLOAD__' => __ROOT__.'/Upload',
     )
+=======
+>>>>>>> e7b25b730add1dacb7877b8734ffadf44cd6a586
 );

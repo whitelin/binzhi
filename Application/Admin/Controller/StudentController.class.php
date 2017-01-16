@@ -11,8 +11,11 @@ class StudentController extends AdminController
 	
 		$this->assign('list', $data);
 
+<<<<<<< HEAD
 		echo "hhhhhhhhhhhh";
 
+=======
+>>>>>>> e7b25b730add1dacb7877b8734ffadf44cd6a586
 		$this->display();
 	}
 
