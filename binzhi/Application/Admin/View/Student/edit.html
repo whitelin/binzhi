@@ -1,0 +1,39 @@
+<extend name="Layout/index" />
+<block name="main">
+<center>
+<include file="Student/menu" />
+<form action="<{:U('Student/save')}>" method="post">
+<table>
+	<tr>
+		<td>姓名：</td>
+		<td><input type="text" name="name" value="<{$vo.name}>"></td>
+	</tr>
+	<tr>
+		<td>性别：</td>
+		<td>
+			<input type="radio" name="sex" value='m' <if condition="$vo.sex eq 'm'">checked</if>>男
+			<input type="radio" name="sex" value='w' <if condition="$vo.sex eq 'w'">checked</if>>女
+		</td>
+	</tr>
+	<tr>
+		<td>年纪：</td>
+		<td><input type="text" name="age" value="<{$vo.age}>"></td>
+	</tr>
+	<tr>
+		<td>班级：</td>
+		<td><input type="text" name="grade" value="<{$vo.grade}>"></td>
+	</tr>
+	<tr>
+		<td>电话：</td>
+		<td><input type="text" name="phone" value="<{$vo.phone}>"></td>
+	</tr>
+	<tr>
+		<td>
+			<input type="hidden" name="id" value="<{$vo.id}>">
+		</td>
+		<td><input type="submit" value="提交"></td>
+	</tr>
+</table>
+</form>
+</center>
+</block>

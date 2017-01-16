@@ -1,0 +1,448 @@
+﻿@charset "UTF-8";
+/*banner*/
+body{ font-family: "Microsoft yahei";}
+.banner{ width: 100%; min-width: 1180px; margin: 0 auto; position: relative;z-index:2}
+.bannerImgUl{ width:100%; min-width:1180px;min-height:376px; overflow: hidden;}/*height在indexJs中设置*/
+.bannerImgUl li{  opacity: 1;position: absolute; left: 0; top: 0; width:100%;}
+.bannerImgUl li a{ display: block;}
+.bannerImgUl li img{ width:100%; min-width:1180px;}
+.pics_pre,.pics_next{width: 26px;height: 50px;display: inline-block;cursor: pointer;position: absolute;top: 50%; margin-top:-25px;z-index: 9; background: url("http://js.youtx.com/images/default2016/indexIconBig.png") no-repeat 0 1px;}
+.pics_pre{left: 50%; margin-left: -590px;}
+.pics_next{right: 50%; margin-right:-590px;background-position: 0 -70px;}
+.bg_sideLeft{ position: absolute; z-index: 1; left: 0; top: 0; width: 50%;  background: url("http://js.youtx.com/images/default2016/bannerBgLeft.png") no-repeat 0px 0px; }
+.bg_sideRight{ position: absolute; z-index: 1;right: 0; top: 0; width: 50%;  background: url("http://js.youtx.com/images/default2016/bannerBgRight.png") repeat-y right 0px; }
+.bannerTitle{ position: absolute; left: 0; bottom: 138px; font-family: "Microsoft yahei"; text-align: center; width: 100%; font-size: 36px; font-weight: 500; color: #fff; text-shadow: 0 3px 3px rgba(0,0,0,0.5);}
+/*banner下面的搜索框*/
+.selectIndex{ position: absolute; left: 50%; bottom: 22px; z-index: 2; margin-left: -460px; width: 918px;  background: url("http://js.youtx.com/images/default2016/searchBg.png") repeat 0 0; padding: 12px; border-radius: 2px;}
+.selectCity{ width: 280px; height: 25px; padding: 10px 12px; background: #fff; position: relative; border-radius: 2px; float: left;}
+.selCityInp{ width: 265px; border: 0 none; line-height: 25px; height: 25px; color:#5e5e5e; font-size: 14px; font-family: "Microsoft yahei"; }
+.selectCity .smartSearch{ display: none; position: absolute; left: 0; top: 46px; z-index: 9; background: #fff; width: 300px; padding: 12px 10px;font-size: 14px; font-family: "Microsoft yahei"; box-shadow:1px 1px 2px 1px rgba(0,0,0,0.2); -webkit-box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.2); -moz-box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.2); }
+.selectCity .smartSearch li{line-height:26px; cursor: pointer; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+
+.selDate{ position: relative;; background:#fff url("http://js.youtx.com/images/default2016/indexIcon2016.png") no-repeat 190px -166px; padding: 10px 38px 10px 46px; float: left; margin-left: 5px; border-radius: 2px; font-family: "Microsoft yahei";}
+.selDateTxt{ font-size: 14px; position: absolute; left:10px; top:10px;color:#5e5e5e; line-height: 25px; }
+.selDateInp{ width: 140px ;border:0 none; line-height: 25px; height: 25px; font-size: 14px; color: #333;}
+.calendarBox{ position: absolute; left: 0; top: 46px; z-index: 9;}
+
+.selPerson{  float: left;width: 156px; padding: 10px 12px; background: #fff; border-radius: 2px; margin-left: 2px; position: relative; font-family: "Microsoft yahei"; }
+.selPerTrigger{ line-height: 25px; height: 25px; font-size: 14px; color: #5e5e5e;}
+.selPerTrigger em{ color: #333; padding-left: 6px;}
+.selPerChose{ display: none; background: #fff; border-radius: 2px;width: 180px; position: absolute; left: 0; top: 46px;  box-shadow:1px 1px 2px 1px rgba(0,0,0,0.2); -webkit-box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.2); -moz-box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.2); }
+.selPerChose li{ line-height: 32px;padding: 0 12px;  font-size: 14px; color: #464849; }
+.selPerChose li.selCur{  color: #fff; background:#ff9913; }
+.searchBtn{ float: left; margin-left: 5px; background: #ff9913; width: 148px; height: 45px; line-height: 45px;  text-align:center; color: #fff; font-weight: 500; word-spacing: 10px; font-family: "Microsoft yahei"; font-size: 18px; border: none; }
+/*banner下面的link*/
+.bannerLkBox{ background: #fff;}
+.bannerLkUl{ width: 1180px; margin: 0 auto;}
+.bannerLkUl li{ float: left;width: 25%;}
+.bannerLkUl li a{ display: block; padding: 74px 0 22px 0;background: url("http://js.youtx.com/images/default2016/indexIconBig.png") no-repeat 136px -118px; }
+.bannerLkUl li p{ color:#696969;  height: 34px; line-height: 34px; font-size: 19px; text-align: center; }
+.bannerLkUl li.bannerLkLi2 a{ background-position: 136px -238px;}
+.bannerLkUl li.bannerLkLi3 a{ background-position: 136px -358px;}
+.bannerLkUl li.bannerLkLi4 a{ background-position: 136px -478px;}
+.bannerLkUl li.curLi{ box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.1);-webkit-box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.1);-moz-box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.1);}
+/*mainWrap*/
+    /*section1热门好去处*/
+.conWrap{width: 100%;}
+.mainCon{width: 100%;}
+.conTit{ width: 1180px; margin: 0 auto; height: 115px; position: relative; color:#525252;}
+.conTit h2{ font-size: 34px; color: #33322f; font-weight: bold; position: absolute; top: 33px;background:#f2f2f2; width: 220px; left: 50%; margin-left: -110px; text-align: center;}
+.line{ position: absolute; left: 0; top: 57px; height: 1px; background: #d9d9d9; width: 100%; }
+.conTit p{ padding-top: 85px; height: 30px; line-height: 30px; font-size: 20px; color: #7d7d7d; text-align: center;}
+.conTit .moreCon{ padding-top: 88px;text-align: center; }
+.conTit a.more{ display: inline-block; height: 30px; line-height: 30px; padding: 0 40px; font-size: 16px; color: #7d7d7d; text-indent: -10px;background: url("http://js.youtx.com/images/default2016/moreBg.png") no-repeat center 0px;}
+.hotAreaUl{ padding-bottom: 10px;}
+.hotAreaUl li{ float: left; width: 380px; height: 260px; margin-right: 20px; position: relative; padding-top: 20px;}
+.hotAreaUl li.noMR{ margin-right: 0;}
+.hotAreaTxt{ z-index: 2; color: #ffffff; line-height: 58px; position: absolute; left: 0; bottom: 0; width: 100%; text-shadow: 1px 1px 2px rgba(0,0,0,0.4);}
+.hotAreaBg{ position: absolute; z-index: 1; left:0 ;bottom: -1px;  height:60px; width: 100%;background: url("http://js.youtx.com/images/default2016/hotAreaBg.png") repeat-x 0px 0px;  }
+.hotAreaTxt em{ float: right; font-size: 15px; max-width: 250px; padding-right: 14px;}
+.hotAreaTxt span{ float: left; font-size: 32px; padding-left: 14px; }
+/*特色短租*/
+.focusPicture{width:780px;height:310px;overflow:hidden;position:relative; margin-right: 20px; float: left; padding-top: 20px;}
+.PictureUl li{display:none;}
+.PictureLis{position:absolute;z-index:4;bottom:10px;right:15px;padding:6px;}
+.PictureLis span{float:left;display:inline-block;background:url(http://js.youtx.com/images/default2014/picsIco.png) no-repeat;width:15px;height:15px;margin:0 4px;cursor:pointer;}
+.PictureLis .Cur{background-position:0 -21px;}
+.shortRent{ padding-bottom: 40px;}
+.shortRentUl li.shortRentLi{margin-right: 20px; float: left; width: 380px; height:310px;  position: relative; padding-top: 20px;}
+.shortRentUl li.noMR{ margin-right: 0;}
+.shortRentTxt{ position: absolute; left: 0; bottom: 0; z-index: 2; width: 360px;padding:0 10px 5px;color: #ffffff; line-height: 28px;}
+.shortRentTxt h2,.shorRentTxt p{  font-size: 16px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.shortRentTxt p{ line-height: 24px;}
+.shorRentPr{ position: absolute; right: 10px; bottom: 6px; z-index:2;color: #ff9913;font-size: 16px;}
+
+.shorRentPr em{ font-size: 28px;  }
+.shorRentPr i{ font-size: 12px; color: #fff; vertical-align: baseline;}
+    /*目的地攻略*/
+.desStrag{ width: 100%; min-width: 1180px; margin:0 auto;overflow: hidden;position:relative}
+.desStrag .conTit h2{ background: #fff;}
+.desStragImg{ margin-top: 20px; position: relative; min-height: 317px; width: 100%; min-width: 1180px;}
+.desStragUl{ position: relative;}
+.desBg{ width: 575px; height: 100%; background: url("http://js.youtx.com/images/default2016/desBg.png") repeat-y right 0px; position: absolute; right: 0; top: 0; z-index: 1;}
+.desStragUl li{ position: relative; display: none;}
+.desStragUl li img{ width: 100%; min-width: 1180px;}
+.desImgTxt{ position: absolute; right: 50%; margin-right: -590px; z-index: 2; top: 15.81%; width: 290px; color: #fff; }
+.desImgTxt h2 a{ font-size: 20px; height: 40px; line-height: 40px; color: #fff; font-weight: 500;}
+.desImgTxt h3{height: 34px; line-height: 34px;padding-bottom: 22px;  font-size:14px;}
+.desImgTxt h3 span{ float: left; max-width:150px; }
+.desImgTxt h3 a{ float: right; max-width: 150px; color: #fff; }
+.desImgTxt h3 a:hover{ text-decoration: underline;}
+.desImgTxt p{ line-height: 24px; font-size: 13px; text-align: justify;}
+
+.desSmallImg{ position: absolute; top: 70%; right: 50%; margin-right: -590px; width: 300px; z-index: 3;}
+.desSmallImg li{ float: left; width: 50px; height: 50px; margin-left: 10px; position: relative;}
+.desSmallImg .border{ position: absolute; left: -2px; top: -2px; width: 50px; height: 50px; border: 2px solid #ffffff; display: none;}
+.desSmallImg .border i{ position: absolute; width: 12px; height: 6px; background: url("http://js.youtx.com/images/default2016/indexIconBig.png") no-repeat 0px -1240px; left: 20px; top: -16px;}
+.desSmallImg .mask{ position:absolute; left: 0; top: 0; width:50px; height: 50px; z-index: 4; background: #000; opacity: 0.2; filter: alpha(opacity=20);}
+/*房东故事*/
+.landLodStory .conTit h2{ background: #fff; }
+
+.landLRoImg{ width: 1260px; margin: 0 auto; padding: 0px 0 40px; margin-top:20px;position: relative; }
+.landLRoImgCon{ width: 1180px; margin:0 auto; overflow: hidden; position: relative; height: 430px;}
+.arowLeft,.arowRight{ cursor: pointer; position: absolute; top: 194px;  width: 22px; height: 38px; background: url("http://js.youtx.com/images/default2016/indexIconBig.png") no-repeat 0 -620px;}
+.arowLeft{left: 3px; }
+.arowRight{right: 3px; background-position:  0 -690px;}
+.landLRoUl{ width: 800%; position: absolute; left: 0; top: 0;}
+.landLRoUl li{ float: left; width: 580px; height: 430px; position: relative; font-family: "Microsoft yahei"; margin-right: 20px;}
+.landLBg{ position: absolute; left: 0; bottom: 0;z-index: 1;  background: url("http://js.youtx.com/images/default2016/landLStoryBg.png") repeat-x 0 0; height: 247px; width: 100%;}
+.landLPor{ position: absolute; left: 0;  z-index:2;top: 172px; width: 100%; text-align: center;}
+.landLPor img{ border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; border: 3px solid #fff; }
+.landLPor h2{ font-size: 20px; color: #fff; font-weight: 500; height: 54px; line-height: 54px;}
+.landLPor h2 span{ font-size: 16px;}
+.landLStoryTxt{  position: absolute; left: 0; bottom: 0; z-index: 2; width:520px; padding:20px 30px; font-size: 13px; color: #fff; text-align: justify; line-height: 24px; }
+.landLStoryTxt .quoMarkL,.landLStoryTxt .quoMarkR{ width: 16px; height: 16px; position: absolute;  background: url("http://js.youtx.com/images/default2016/indexIconBig.png") no-repeat 0 -760px; }
+.landLStoryTxt .quoMarkL{left: 10px ;top: 8px; }
+.landLStoryTxt .quoMarkR{ right: 12px ;bottom: 18px; background-position: 0 -830px;}
+
+
+
+/*ytx_index2014.css的搜索样式 begin*/
+.search{border:2px solid #63afee;width:380px;float:left;height:427px; }
+.searchTxt dt{width:340px;margin-bottom:20px;display:inline;}
+.searchTxt dd{width:160px;margin-bottom:20px;display:inline;}
+.searchTxt dt input{color:#999;background:url(http://js.youtx.com/images/default2014/searchBg01.png) right no-repeat;width:332px;height:35px;line-height:35px;border:1px solid #d1d1d1;padding-left:6px;}
+.searchTxt dt input[type="text"]:focus,.search dd input[type="text"]:focus{border:1px solid #63afee;}
+.searchTxt dd input{background:url(http://js.youtx.com/images/default2014/searchBg02.png) right no-repeat;width:120px;height:35px;line-height:35px;border:1px solid #d1d1d1;padding-left:38px;}
+.menuInput{font-size:16px;background:url(http://js.youtx.com/images/default2014/searchBg03.png) no-repeat;width:120px;height:35px;line-height:35px;border:1px solid #d1d1d1;cursor:pointer;padding-left:38px;}
+.search dd .btn{background:url(http://js.youtx.com/images/default2014/searchBg04.png) no-repeat;width:160px;height:38px;border:none;cursor:pointer;}
+.overseasCitys a{padding-right:15px;}
+.overseasCitys{width:340px;line-height:14px;height:14px;overflow:hidden;}
+.searchTxt{padding:20px 20px 15px;}
+.searchTxt dl input{font-size:14px;}
+.TxtHint{position:absolute;top:11px;left:5px;z-index:2;font-size:14px;}
+.TheTotal{position:absolute;top:37px;left:0;border:1px solid #D1D1D1;width:158px;background-color:#fff;border-top:none;height:234px;overflow-y:scroll;}
+.TheTotal li{padding:0 10px;color:#999;line-height:30px;cursor:pointer;border-bottom:1px dotted #D1D1D1;}
+.TheTotal .IndCur{background-color:#85C7F0;color:#fff;}
+.TheTotal li:last-child{border:none;}
+.PictureLisBg{background:url(http://js.youtx.com/images/default2014/PictureBg.png) no-repeat;width:580px;height:54px;bottom:0;left:0;z-index:2;position:absolute;}
+.PictureLisTxt{font-family:Microsoft yahei;width:425px;height:32px;bottom:0;left:0;z-index:5;position:absolute;overflow:hidden;padding:18px 0 4px 20px;color:#fff;font-size:14px;}
+.PictureLisTxt span{color: #FF4401;font-family: Microsoft yahei;font-size:20px;}
+.Ytxcitybox{display:none;position:absolute;width:508px;border:1px solid #bcbeb3;box-shadow: 0 5px 12px #666666;border-radius:5px;background-color:#fff;left:0;top:auto;border:none;}
+.YtxcityboxTit{cursor: pointer;background: url(http://js.youtx.com/images/citytitle_icon.gif) no-repeat 6px 11px #E8F0F6;border-radius: 5px;color: #000000;height: 32px;line-height: 32px;overflow: hidden;padding-left: 22px;}
+.YtxcityboxTit .close {background: url(http://js.youtx.com/images/city_ico_close.gif) no-repeat;float: right;height: 14px;margin: 9px 8px 0 0;width: 14px; }
+.citylisTab{background: url(http://js.youtx.com/images/citytab_line.png) repeat-x left bottom;border-radius:5px;height:32px;padding:0 8px 1px 8px;width: auto;}
+
+.citylisTab span{font-family:"宋体";display:block;float:left;height:24px;line-height:24px;/*padding:0 26px;*/border-top:1px solid #fff;text-align:center;margin-top:8px;overflow:hidden;/*margin-right:1px;*/cursor: pointer; width:76px;}/*2015-11-26xg*/
+
+.citylisTab .current{height:24px;line-height:24px;padding:0 6px;border:1px solid #ddd;border-bottom:none;color:#000;font-weight:700;background:#fff;border-top-left-radius:4px;border-top-right-radius:5px;}
+.hotcitylist{padding:5px 10px;}
+.Ytxcitybox .hotcitylist a:hover, .Ytxcitybox .hotcitylist .current{color:#008bda;font-weight:700;text-decoration:none;}
+.hotcitylist a{padding:5px 0;width: 74px;float:left;margin-left:4px;}
+.citylistUl li{display: none;}
+.citywordUl li{border-bottom: 1px dotted #BDBDBD;}
+.citywordUl li:last-child{border-bottom: none;}
+.citywordTit{height:32px;line-height: 32px;padding:0 10px;border-bottom: 1px solid #BDBDBD;}
+.citywordUl li a{display: block;padding:5px 10px; }
+.citywordUl .On{background-color:#85C7F0;}
+.citywordUl .On a{color:#fff!important;}
+.citybox_no{z-index:101;position:absolute;top:-1px;left:2px;_left:1px;width:136px;height:24px;line-height:24px;text-align:center;background:#ffeeab;border:1px solid #b8890d;color:#8a6400;box-shadow:0 5px 12px #666; -moz-box-shadow:0 5px 12px #666; -webkit-box-shadow:0 5px 12px #666; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;}
+
+.inlandCitysTit a,.moreCity{float:left;line-height:24px;}
+.inlandCitysTit a{padding:0 10px;}
+.moreCity{position: relative;z-index: 5;}
+.moreCity .MoreATxt{padding:10px 5px;position: absolute;top:27px;right: -17px;z-index: 2;width: 200px;background-color:#EFFCFB;border:1px solid #BAEAE7 ;}
+.MoreDiv{display:none;}
+.moreCity .MoreA{float:left;padding:0 24px 0 10px;background:url(http://js.youtx.com/images/default2014/headIcos.png) right 9px no-repeat;cursor: pointer;}
+.moreCity .MoreB{background:url(http://js.youtx.com/images/default2014/headIcos.png) right -13px no-repeat;}
+
+.MoreATxtclose{ background: url("http://js.youtx.com/images/city_ico_close.gif") no-repeat;height: 14px;width: 14px;z-index:3;display: block;top: 30px;right: -13px;position: absolute; cursor: pointer;}
+.inlandCitys{background-color:#effcfb;padding:10px 20px 20px;border-top:1px solid #baeae7;*padding:10px 20px 16px;}
+.inlandCitysTit .active{border-bottom:3px solid #63afee;}
+.inlandCitysTxt{z-index:4;position:relative;border:1px solid #abd9ff;background-color:#f9fefd;border-top:1px solid #63afee;width:336px;padding-left:1px;}
+.inlandCitysTxt li{position:relative;float:left;}
+
+
+
+.inlandCitysTxt .metro{ cursor: default;display:block;background:url(http://js.youtx.com/images/default2014/searchIcos.png?1) no-repeat center 12px;width:111px;float:left;height:22px;padding-top:50px;text-align:center;border-right:1px solid #abd9ff;border-bottom:1px solid #abd9ff;}
+.inlandCitysTxt .railway{ cursor: default;display:block;background:url(http://js.youtx.com/images/default2014/searchIcos.png?1) no-repeat center -59px;width:111px;height:22px;padding-top:50px;text-align:center;border-right:1px solid #abd9ff;border-bottom:1px solid #abd9ff;}
+.inlandCitysTxt .school{ cursor: default;display:block;background:url(http://js.youtx.com/images/default2014/searchIcos.png?1) no-repeat center -131px;width:111px;height:22px;padding-top:50px;text-align:center;border-bottom:1px solid #abd9ff;}
+.inlandCitysTxt .hospital{ cursor: default;display:block;background:url(http://js.youtx.com/images/default2014/searchIcos.png?1) no-repeat center -205px;width:111px;height:23px;padding-top:50px;text-align:center;border-right:1px solid #abd9ff;}
+.inlandCitysTxt .scenic{ cursor: default;display:block;background:url(http://js.youtx.com/images/default2014/searchIcos.png?1) no-repeat center -275px;width:111px;height:23px;padding-top:50px;text-align:center;border-right:1px solid #abd9ff;}
+.inlandCitysTxt .Pavilion{ cursor: default;display:block;background:url(http://js.youtx.com/images/default2014/searchIcos.png?1) no-repeat center -348px;width:111px;height:23px;padding-top:50px;text-align:center;}
+
+.inlandCitysTxt .noInfo .metro{background:url(http://js.youtx.com/images/default2014/searchIcos.png?1)no-repeat center -419px;color:#999!important; cursor: default;}
+.inlandCitysTxt .noInfo .metro:hover{color:#999!important;}
+.inlandCitysTxt .noInfo .railway{background:url(http://js.youtx.com/images/default2014/searchIcos.png?1) no-repeat center -491px;color:#999!important; cursor: default;}
+.inlandCitysTxt .noInfo .railway:hover{color:#999!important;}
+.inlandCitysTxt .noInfo .school{background:url(http://js.youtx.com/images/default2014/searchIcos.png?1) no-repeat center -562px;color:#999!important; cursor: default;}
+.inlandCitysTxt .noInfo .school:hover{color:#999!important;}
+.inlandCitysTxt .noInfo .hospital{background:url(http://js.youtx.com/images/default2014/searchIcos.png?1) no-repeat center -636px;color:#999!important; cursor: default;}
+.inlandCitysTxt .noInfo .hospital:hover{color:#999!important;}
+.inlandCitysTxt .noInfo .scenic{background:url(http://js.youtx.com/images/default2014/searchIcos.png?1) no-repeat center -706px;color:#999!important; cursor: default;}
+.inlandCitysTxt .noInfo .scenic:hover{color:#999!important;}
+.inlandCitysTxt .noInfo .Pavilion{background:url(http://js.youtx.com/images/default2014/searchIcos.png?1) no-repeat center -779px;color:#999!important; cursor: default;}
+.inlandCitysTxt .noInfo .Pavilion:hover{color:#999!important;}
+
+
+.inlandAdd{display:none;width:337px;position:absolute;border:1px solid #BAEAE7;left:-1px;top:72px;z-index:4;background-color:#fff;}
+.inlandAdd_01{background-color:#effcfb;padding:12px 5px;border-bottom:1px dashed #BAEAE7;}
+.inlandAdd_02{background-color:#fff;padding:12px 5px;}
+.inlandAdd dd a{display:block;float:left;width:72px; text-align:left;line-height:24px;padding:0 4px;height:24px;overflow:hidden;}
+.Jianico{display:none;position:absolute;bottom:0px;left:0;text-align:center;width:112px;height:7px;z-index:5;}
+#pullDown{z-index:9;}
+.inlandCitysDiv {position: relative;z-index: 10;}
+
+
+
+
+/*主要内容*/
+.Ytx_ad{padding-top:20px;}
+.Column{padding:15px 0 20px;border-bottom:1px solid #d1d1d1;}
+.ColumnTit{height:30px;line-height:30px;padding-bottom:10px;}
+.ColumnTit dt{font-size:18px;font-family:Microsoft yahei;padding-right:35px;}
+.ColumnTit dd{overflow:hidden;width:950px;height:20px;line-height:20px;padding:8px 0 2px;}
+.ColumnMore{height:20px;line-height:20px;padding:8px 0 2px;}
+.ColumnTit dd a{padding:0 8px;}
+.ColumnMore a{color:#008ad9!important;}
+.ColumnTxtUl li{float:left;}
+
+
+
+.SiderBg01{background-color:#fff;width:170px;height:212px;position:absolute;bottom:20px;left:20px;filter:Alpha(opacity=80);opacity:0.80;z-index:2;box-shadow:0 0 1px #fff;}
+.ColumnSiderTxtUl{width:140px;height:182px;position:absolute;bottom:20px;left:20px;z-index:3;padding:15px;}
+.ColumnH4{font-family:Microsoft yahei;font-size:22px;line-height:28px;overflow: hidden;width:100%;padding-bottom:10px;}
+.ColumnSiderTxtUl .price{position:absolute;bottom:20px;left:10px; z-index:3;}
+.price{line-height:24px;height:24px;}
+.price em{font-size:18px;font-family:Microsoft yahei;color:#ff4401;}
+.price span{color:#ff6600;font-size:26px;font-family:Microsoft yahei;}
+.ColumnTxt_L{float:left;position:relative;width:380px;height:448px;overflow:hidden;}
+.ColumnTxt_L .Columnp{font-family:Microsoft yahei;font-size:14px;}
+
+
+
+.QandA{width:380px;float:left;}
+.QandATit{line-height:24px;padding-bottom:15px;}
+.quiz{float:right;display:block;background-color:#ff9913;color:#fff!important;padding:0 8px;}
+.QandATxtH3{font-size:14px;font-family:Microsoft yahei;background:url(http://js.youtx.com/images/default2014/picsIco.png) -15px -18px no-repeat;line-height:22px;padding-left:28px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width:352px;}
+.QandATxt{border:1px dashed #b9b9b9;background-color:#f4f4f4;padding:10px;height:121px;overflow:hidden;}
+.mudeD_UlDiv{padding-right:20px;position:relative;float:left;}
+.QandATxtUl li{padding:4px 0;}
+.QandADiv{padding-left:62px;line-height:18px;height:52px;overflow:hidden;}
+.QandAImg{margin-left:-100%;float:left;}
+.QandADivH3 a{color:#008ad9;padding-right:10px;}
+
+/*弹出层-日历*/
+.ui-corner-all {border-radius: 4px 4px 4px 4px;}
+.ui-widget-content {border: medium none;color: #222222;}
+.ui-widget {font-family: Arial,Verdana,sans-serif;font-size: 1.1em;}
+.ui-datepicker {background: none repeat scroll 0 0 white;border: 1px solid #D3D3D3;border-radius: 10px 10px 10px 10px !important;box-shadow: 0 8px 31px #666666;
+display: none;padding: 10px;width: 205px;}
+.referral_lightbox .ui-icon, .ui-icon-closethick, .ui-dialog-titlebar-close, .ui-widget-header, .ui-state-hover {background: none repeat scroll 0 0 transparent !important; border: medium none !important;}
+.ui-widget-header {color: #222222; font-weight: bold;padding-left: 1px;}
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled {background-image: none;opacity: 0.5;}
+.ui-datepicker-prev,.ui-datepicker-next{background: url(http://js.youtx.com/images/calendar_prev_month.gif) no-repeat 3px 3px!important;cursor: pointer;display: block; float: left; height:20px;width:20px;}
+.ui-datepicker-next {background:url(http://js.youtx.com/images/calendar_next_month.gif) no-repeat 3px 3px !important;float:right;}
+.ui-datepicker-title {font-size:15px;font-weight:bold;letter-spacing: -0.25px;padding-bottom: 8px;text-align: center;}
+table {border-collapse: separate; border-spacing:0;}
+table, caption, tbody, tfoot, thead, tr, th, td {border:0 none;font-family:inherit;font-size:1em;font-style:inherit;font-weight:inherit;margin:0;outline:0 none;padding: 0;
+ vertical-align:baseline;}
+.ui-datepicker-calendar tr { background: none repeat scroll 0 0 #FFFFFF;display: block; overflow: hidden;padding-bottom: 1px;width: 203px;}
+.ui-datepicker-calendar tr td span, .ui-datepicker-calendar tr th span, .ui-datepicker-calendar tr td a {background: none repeat scroll 0 0 transparent !important;
+border: medium none !important; display: block; height: 22px;padding-top: 4px;text-align: center;width: 28px;}
+.ui-datepicker-calendar tr th span {background: none repeat scroll 0 0 #FFFFFF !important;font-weight: bold;}
+.ui-datepicker-calendar tr td, .ui-datepicker-calendar tr th {background: none repeat scroll 0 0 #EFEFEF;display: block; float: left;height: 26px;margin-right: 1px;overflow: hidden;width: 28px;}
+.caption, th, td {font-weight: normal;text-align: left;}
+.ui-datepicker-calendar tbody {display: block;overflow: hidden;width: auto;}
+.ui-datepicker-calendar tbody tr {background: none repeat scroll 0 0 #E5E5E5 !important;}
+.ui-datepicker-calendar tr td.ui-datepicker-unselectable {background: none repeat scroll 0 0 #A7A7A7;}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {background: none repeat scroll 0 0 #E6E6E6;border: 1px solid #D3D3D3;color: #555555;font-weight: normal;}
+.ui-datepicker-buttonpane {padding-top: 10px;text-align: center;}
+.ui-datepicker-close {background: none repeat scroll 0 0 transparent !important;border: medium none !important;color: #0087D2 !important;cursor: pointer !important;font-size: 12px !important;font-weight: normal !important;}
+.ui-datepicker-close:hover{ font-weight:bold!important;}
+.ui-datepicker-calendar tr td a.ui-state-hover {background: none repeat scroll 0 0 #85C7F0 !important;color: #FFFFFF;font-weight: normal;}
+.ui-datepicker-calendar tr td a:hover {background: none repeat scroll 0 0 #85C7F0 !important;color: #FFFFFF;font-weight: bold;}
+.ui-datepicker-calendar tr td a.ui-state-active {background: none repeat scroll 0 0 #85C7F0 !important;color: #FFFFFF;}
+.font_family_wryh{font-family: "Microsoft YaHei", monospace !important;}
+
+
+.inlandAdd dd .Cur{color:#008ad9;}
+.searchTxt dt dl .categoriesTit,.searchTxt dt dl .categoriesTxt{width:auto;margin:0;}
+.citylisTab .Cur{border-bottom:2px solid #63afee;height:22px;font-weight:bold;}
+.citylisTabUl{padding:8px;}
+.categories{padding-left:26px;}
+.searchTxt dt dl .categoriesTit{color:#008ad9;float:left;line-height:24px;height:24px;width:100%}
+.searchTxt dt dl .categoriesTxt{float:left;width:100%}
+.categoriesTxt a{float:left;display:inline-block;width:76px;overflow:hidden;line-height:24px;height:24px;padding-bottom:5px;}
+.citylisTabUl li{display:none;}
+.categoriesTxt02{padding-left:26px;}
+
+
+.ColumnTit dd a,.search a,.siderBarUl li a,.business a,.Column a,.inlandCity dd a,.NavMenu dd a{color:#464849}/*2014-7-15修改*/
+.ColumnTit dd a:hover,.search a:hover,.business a:hover,.Column a:hover,.inlandCity dd a:hover,.NavMenu dd a:hover{color:#008ad9}/*2014-7-15修改*/
+/*ytx_index2014.css的搜索样式 end*/
+
+
+/*日历  ----------------------------------------------------------------------------------------------------*/
+
+#calprev.disabled {
+    cursor: default;
+    background-position: 0 -19px;
+}
+#calnext.disabled {
+    cursor: default;
+    background-position: -23px -19px;
+}
+.calendarBox {
+    position: relative;
+    width: 348px;
+    padding: 4px 50px 20px;
+    border: 1px solid #ccc;
+    font-family: Tahoma;
+    background: #FFF;
+    z-index: 10000;
+}
+.calPrev,
+.calNext {
+    width: 22px;
+    height: 19px;
+    background: url(http://js.youtx.com/images/default2016/cal_btn.png) no-repeat;
+    cursor: pointer;
+}
+.calPrev em,
+.calNext em {
+    display: none;
+}
+.calPrev {
+    position: absolute;
+    left: 16px;
+    top: 96px;
+    background-position: 0 0;
+}
+.calNext {
+    position: absolute;
+    right: 16px;
+    top: 96px;
+    background-position: -23px 0;
+}
+.calendar {
+    float: left;
+    width: 164px;
+    padding: 0 5px;
+    font-family: "微软雅黑";
+}
+.calendar h2 {
+    font-size: 13px;
+    padding: 8px 0 6px;
+    text-align: center;
+    color: #464849;
+}
+.calendar table {
+    width: 164px;
+}
+.calendar th {
+    background: #FFFFFF;
+    width: 23px;
+    text-align: center;
+    color: #464849;
+    vertical-align: middle;
+    height: 26px;
+    line-height: 24px;
+    border: none;
+    font-size: 12px;
+}
+.calendar td {
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    height: 20px;
+    line-height: 20px;
+    vertical-align: middle;
+}
+.calendar td.disabled {
+    background: #e9e9e9;
+    cursor: default;
+}
+.calendar td.current {
+    color: #fff;
+    background: #ff9913;
+    height: 18px;
+    line-height: 18px;
+    border: none;
+}
+.calendar td.delete {
+    color: #ccc;
+    text-decoration: line-through;
+    cursor: default
+}
+.calendar td:hover {
+    color: #f60;
+}
+.calendar td.disabled:hover {
+    color: #ccc;
+}
+
+
+/*热门好去处新增加的样式 */
+.hotAreaUl li a{
+	width:100%;
+	height:260px;
+	position:relative;
+	display: block;
+}
+.hotAreaUl li div.shadow{
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0;
+	top:0;
+	background-color:#000;
+	opacity:0.15;
+	filter: alpha(opacity=15);
+	left:0;
+	top:0;
+	display:none;
+}
+/*特色短租*/
+.fl { float: left;}
+.fr { float: right;}
+.clearfix:after{ clear:both; content:"\200B"; display:block; height:0;}
+.clearfix{ *zoom:1;}
+.clear{ clear:both; font-size:0; height:0; line-height:0; overflow:hidden;}
+.pab { position: absolute}
+.pre { position: relative;}
+.hide { display: none; }
+.t16 { height: 16px; line-height: 16px; font-size: 16px; }
+.t14 { height: 14px; line-height: 14px; font-size: 14px; }
+.short_rent { margin: 0 auto; width: 1180px; }
+
+
+ul.navlist .n_list{float: left; height: 50px; width: 100%;}
+ul.navlist .list1{border-bottom: 1px solid #d9d9d9;width: 100%;margin-bottom: -41px;}
+ul.navlist .sr_title {position: relative; left: 50%; margin-left: -110px; padding: 16px 0 4px;width: 220px!important;text-align: center; font-size: 34px; font-weight: bold; background: #f2f2f2; }
+.title_bar { width: 100%; margin-bottom: 22px; }
+.title_bar .vice_title { width: 100%; text-align: center; font-size: 18px; color: #7d7d7d; }
+.sr_show { position: relative; margin-top: 20px; margin-right: 20px; }
+.sr_show.mr0 { margin-right: 0; }
+.sr_show .tit_txt { position: absolute; left: 0; top: 210px; padding-left: 14px; height: 40px; width: 366px; line-height: 40px; background: url(http://js.youtx.com/images/default2016/gray_bg.png) repeat-x; color: #fff; font-size: 20px; }
+.show_info { padding: 12px 12px 10px; width: 356px; background: #fff; }
+.show_info .mb7 { margin-bottom: 7px; }
+.show_info .price { height: 38px; font-size: 16px; }
+.show_info .price em {  color: #ff9913;font-weight: bold; }
+.show_info .price .em2 { font-size: 28px; }
+.show_info .price .em3 { font-size: 12px; color: #333; font-weight: normal; }
+.show_info .price .t28 { font-size: 28px; }
+/* End 特色短租*/
+
+.hotArea,.shortRent{width: 1180px; margin: 0 auto;background:#f2f2f2;}
+.landLodStory{width: 100%;background:#FFFFFF;}
+.wrap1{width: 100%;background:#f2f2f2;}

@@ -1,0 +1,29 @@
+<extend name="Layout/index" />
+<block name="breadcrumb-01">
+	<li>
+		<i class="icon-home home-icon"></i>
+		<a href="#">首页</a>
+	</li>
+	<li class="active">用户管理</li>
+</block>
+
+<block name="breadcrumb-02">
+	<h1>
+		用户管理
+		<small>
+			<i class="icon-double-angle-right"></i>
+			 修改用户
+		</small>
+	</h1>
+</block>
+<block name="main">
+
+	<form action="<{:U('User/save')}>" method='post'>
+		用户名：<b><{$vo.username}></b><br>
+		真实姓名 ：<input type="text" name="name" value="<{$vo.name}>"><br>
+		<input type="submit" value="修改">
+		<input type="hidden" name="id" value="<{$vo.id}>">
+		
+		
+	</form>
+</block>
